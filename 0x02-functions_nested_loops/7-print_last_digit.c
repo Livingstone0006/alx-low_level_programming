@@ -6,8 +6,8 @@
  *
  * Description: prints the last digit of a number
  *
- * Return: integer
- */
+ *       * Return: integer
+ *        */
 
 int prin:t_last_digit(int n)
 {
