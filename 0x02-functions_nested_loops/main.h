@@ -8,5 +8,8 @@ int _islower(int c);
 int _isalpha(int c);
 int print_sign(int n);
 int _abs(int);
-
+int print_sign(int n);
+void jack_bauer(void);
+void times_table(void);
+void time_table(int n);
 #endif
