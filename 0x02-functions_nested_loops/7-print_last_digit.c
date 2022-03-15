@@ -9,7 +9,7 @@
  * Return: integer
  */
 
-int print_last_digit(int n)
+int prin:t_last_digit(int n)
 {
 	int last = n % 10;
 
