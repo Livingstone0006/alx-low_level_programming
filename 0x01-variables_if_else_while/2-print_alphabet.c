@@ -1,21 +1,26 @@
-#include <stdio.h>
-/**
- * main - Entry point
- *
- *
- *
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-	char al[27];
-	int i;
+#include "main.h"
 
-	for (i = 0; i < 26; i++)
+/**
+ * print_alphabet_x10 - prints 10 times
+ *
+ *  Return: void
+ */
+
+void print_alphabet_x10(void)
+{
+	int round = 0;
+	char letter = 'a';
+
+	while (round < 10)
 	{
-	al[i] = 'a' + i;
-	putchar(al[i]);
+		letter = 'a';
+		while (letter <= 'z')
+		{
+			_putchar(letter);
+			letter++;
+		}
+		_putchar('\n');
+
+		round++;
 	}
-	putchar('\n');
-	return (0);
 }
