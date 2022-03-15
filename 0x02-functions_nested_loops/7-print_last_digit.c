@@ -9,14 +9,15 @@
  * Return: integer
  */
 
-int prin:t_last_digit(int n)
+int print_last_digit(int n)
 {
-	int last = n % 10;
+	int lastDig
 
-	if (n < 0)
-		last = last * -1;
+	if (n >= 0)
 
-	_putchar(last + '0');
-
+	{
+		lastDig = (n % 10) * -1;
+	}
+	_putchar('0' + lastDig);
 	return (last);
 }
