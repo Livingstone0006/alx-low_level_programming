@@ -1,13 +1,34 @@
-#include <unistd.h>
+#include "main.h"
 
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
+ * print_diagonal - entry point
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Description: Prints diagonals
+ *@n: number of spaces
+ * Return: void
  */
-int _putchar(char c)
+
+void print_diagonal(int n)
 {
-	return (write(1, &c, 1));
+	int row, num_lines;
+
+	if (n <= 0)
+	{
+		_putchar('\n');
+	}
+	else
+	{
+		for (row = 1; row <= n; row++)
+		{
+			if (row > 1)
+			{
+				for (num_lines = 1; num_lines <= row - 1; num_lines++)
+				{
+				_putchar(' ');
+				}
+			}
+			_putchar('\\');
+			_putchar('\n');
+		}
+	}
 }
